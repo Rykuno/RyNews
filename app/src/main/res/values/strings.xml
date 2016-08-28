@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RyNews</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="articles_not_available">No Articles Available</string>
+    <string name="check_network">Check network</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="author_not_available">Author Not Available</string>
+    <string name="url_unavailable">URL Unavailable</string>
+</resources>
