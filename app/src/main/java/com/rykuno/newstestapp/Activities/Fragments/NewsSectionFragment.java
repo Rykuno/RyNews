@@ -158,8 +158,7 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
     public void onLoaderReset(Loader<List<NewsArticle>> loader) {
         mAdapter.clear();
     }
-
-
+    
     @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putParcelableArrayList(ARTICLE_KEY, mNewsArticleList);
@@ -168,7 +167,7 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(@Nullable Bundle savedInstanceState ) {
         super.onActivityCreated(savedInstanceState);
         if (savedInstanceState!=null) {
             mNewsArticleList = savedInstanceState.getParcelableArrayList(ARTICLE_KEY);
@@ -181,10 +180,7 @@ public class NewsSectionFragment extends Fragment implements LoaderManager.Loade
         super.onCreate(savedInstanceState);
         mUrlSection = getArguments().getString("section");
         ARTICLE_KEY = getArguments().getString("section");
+
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
 }

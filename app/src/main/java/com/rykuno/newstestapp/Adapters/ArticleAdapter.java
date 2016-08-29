@@ -14,9 +14,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-/**
- * Created by rykuno on 8/8/16.
- */
 public class ArticleAdapter extends ArrayAdapter<NewsArticle> {
     private Context mContext;
 
@@ -38,7 +35,6 @@ public class ArticleAdapter extends ArrayAdapter<NewsArticle> {
         }else{
             holder = (MyViewHolder) listItemView.getTag();
         }
-
 
         holder.title.setText(currentNewsArticle.getTitle());
 
